@@ -16,8 +16,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://electivepro.net'),
   title: {
-    default: 'ElectivePRO | Open-Source Elective Course Selection Platform',
-    template: 'ElectivePRO | %s',
+    default: 'ElectivePRO - Automate Elective Course Selection',
+    template: '%s - ElectivePRO',
   },
   description: 'Free, modern open-source platform for automating elective course selection. Reduce administrative workload by 50% and eliminate scheduling errors. Self-host for free or choose managed hosting.',
   keywords: [
@@ -77,20 +77,20 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://electivepro.net',
     siteName: 'ElectivePRO',
-    title: 'ElectivePRO | Open-Source Elective Course Selection Platform',
+    title: 'ElectivePRO - Automate Elective Course Selection',
     description: 'Free, modern open-source platform for automating elective course selection. Reduce administrative workload by 50% and eliminate scheduling errors.',
     images: [
       {
         url: BRAND_LOGO_URL,
         width: 1200,
         height: 630,
-        alt: 'ElectivePRO | Open-Source Elective Course Selection Platform',
+        alt: 'ElectivePRO - Automate Elective Course Selection',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ElectivePRO | Open-Source Elective Course Selection Platform',
+    title: 'ElectivePRO - Automate Elective Course Selection',
     description: 'Free, modern open-source platform for automating elective course selection. Reduce administrative workload by 50% and eliminate scheduling errors.',
     images: [BRAND_LOGO_URL],
   },
