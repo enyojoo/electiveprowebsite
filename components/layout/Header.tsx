@@ -71,13 +71,13 @@ export function Header() {
       {mobileMenuOpen && (
         <>
           {/* Backdrop */}
-          <div
+          <div 
             className="fixed left-0 right-0 bottom-0 bg-black z-40 lg:hidden"
             style={{ top: `${headerHeight}px` }}
             onClick={() => setMobileMenuOpen(false)}
           />
           {/* Menu */}
-          <div
+          <div 
             className="fixed left-0 right-0 lg:hidden border-t bg-background z-50 shadow-lg"
             style={{ top: `${headerHeight}px` }}
           >
