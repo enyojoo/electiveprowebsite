@@ -8,12 +8,17 @@ const nextConfig: NextConfig = {
 
   // Image optimization settings for Vercel
   images: {
+    unoptimized: false,
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'cldup.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: '**',
       },
     ],
     formats: ['image/webp', 'image/avif'],
