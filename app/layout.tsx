@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     default: 'ElectivePRO - Automate Elective Course Selection',
     template: '%s - ElectivePRO',
   },
-  description: 'Free, modern open-source platform for automating elective course selection. Reduce administrative workload by 50% and eliminate scheduling errors. Self-host for free or choose managed hosting.',
+  description: 'ElectivePRO is an open-source platform that automates elective course selection, giving students a modern portal to choose their electives while freeing staff workload by 50% to focus on student success.',
   keywords: [
     'elective course selection',
     'elective courses',
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     url: 'https://electivepro.net',
     siteName: 'ElectivePRO',
     title: 'ElectivePRO - Automate Elective Course Selection',
-    description: 'Free, modern open-source platform for automating elective course selection. Reduce administrative workload by 50% and eliminate scheduling errors.',
+    description: 'ElectivePRO is an open-source platform that automates elective course selection, giving students a modern portal to choose their electives while freeing staff workload by 50% to focus on student success.',
     images: [
       {
         url: BRAND_LOGO_URL,
@@ -91,7 +91,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'ElectivePRO - Automate Elective Course Selection',
-    description: 'Free, modern open-source platform for automating elective course selection. Reduce administrative workload by 50% and eliminate scheduling errors.',
+    description: 'ElectivePRO is an open-source platform that automates elective course selection, giving students a modern portal to choose their electives while freeing staff workload by 50% to focus on student success.',
     images: [BRAND_LOGO_URL],
   },
 }
