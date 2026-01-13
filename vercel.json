@@ -1,0 +1,18 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "turbo dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "functions": {
+    "app/api/**/*.ts": {
+      "maxDuration": 10
+    }
+  },
+  "regions": ["iad1"],
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    }
+  ]
+}
