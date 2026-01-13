@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://electivepro.net'),
   title: {
     default: 'ElectivePRO | Open-Source Elective Course Selection Platform',
-    template: '%s | ElectivePRO',
+    template: 'ElectivePRO | %s',
   },
   description: 'Free, modern open-source platform for automating elective course selection. Reduce administrative workload by 50% and eliminate scheduling errors. Self-host for free or choose managed hosting.',
   keywords: [

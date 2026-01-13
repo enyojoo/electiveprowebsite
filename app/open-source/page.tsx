@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { BRAND_NAME } from '@/lib/brand-constants'
 
 export const metadata: Metadata = {
-  title: 'Open Source - ElectivePRO',
+  title: 'Open Source',
   description: `${BRAND_NAME} is open-source and free to use. Deploy it yourself, customize it, and contribute back to the community.`,
 }
 

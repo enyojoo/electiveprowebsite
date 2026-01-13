@@ -6,7 +6,7 @@ import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/ca
 import { BRAND_NAME } from '@/lib/brand-constants'
 
 export const metadata: Metadata = {
-  title: 'Hosted Service - ElectivePRO',
+  title: 'Hosted Service',
   description: `Get ${BRAND_NAME} as a fully managed hosted solution. Zero infrastructure management, automatic updates, enterprise security, and dedicated support.`,
 }
 

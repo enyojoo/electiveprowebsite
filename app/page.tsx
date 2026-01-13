@@ -3,7 +3,6 @@ import { Features } from "@/components/marketing/features"
 import { BRAND_DESCRIPTION, BRAND_LOGO_URL } from "@/lib/brand-constants"
 
 export const metadata = {
-  title: "Home",
   description: BRAND_DESCRIPTION,
 }
 

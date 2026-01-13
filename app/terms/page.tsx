@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { BRAND_NAME, BRAND_CONTACT_EMAIL } from '@/lib/brand-constants'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service - ElectivePRO',
+  title: 'Terms of Service',
   description: `Terms of Service for ${BRAND_NAME}. Please read these terms carefully before using our services.`,
 }
 

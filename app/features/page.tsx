@@ -4,7 +4,7 @@ import { BookOpen, Users, BarChart3, Settings, Globe, FileText, Calendar, CheckC
 import { BRAND_NAME } from '@/lib/brand-constants'
 
 export const metadata: Metadata = {
-  title: 'Features - ElectivePRO',
+  title: 'Features',
   description: `Explore the comprehensive features of ${BRAND_NAME}. Automate elective course selection, reduce administrative burden, and improve student experience.`,
 }
 
