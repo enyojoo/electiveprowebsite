@@ -71,36 +71,37 @@ export function Header() {
       {mobileMenuOpen && (
         <>
           {/* Backdrop */}
-          <div 
-            className="fixed left-0 right-0 bottom-0 bg-black/20 backdrop-blur-sm z-40 lg:hidden"
-            style={{ top: `${headerHeight}px` }}
+          <div
+            className="fixed inset-0 bg-black z-40 lg:hidden"
             onClick={() => setMobileMenuOpen(false)}
           />
           {/* Menu */}
-          <div 
-            className="fixed left-0 right-0 lg:hidden border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/95 z-50 shadow-lg"
-            style={{ top: `${headerHeight}px` }}
+          <div
+            className="fixed inset-0 lg:hidden bg-background z-50 flex flex-col"
           >
-            <div className="px-4 py-4 space-y-1">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className={cn(
-                    'block rounded-md px-3 py-2.5 text-base font-semibold leading-7 transition-colors',
-                  pathname === item.href
-                    ? 'bg-accent text-accent-foreground'
-                    : 'text-foreground hover:bg-accent hover:text-accent-foreground'
-                )}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {item.name}
-              </Link>
-            ))}
-              <div className="pt-4 mt-4 border-t space-y-3">
+            <div className="flex flex-col justify-center items-center h-full px-6">
+              <div className="w-full max-w-sm space-y-2">
+                {navigation.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={cn(
+                        'block rounded-lg px-4 py-3 text-center text-lg font-semibold leading-7 transition-colors',
+                      pathname === item.href
+                        ? 'bg-primary text-primary-foreground'
+                        : 'text-foreground hover:bg-accent hover:text-accent-foreground'
+                    )}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+              <div className="mt-8 w-full max-w-sm">
                 <Button asChild className="w-full" size="lg">
                   <Link href="/pricing" onClick={() => setMobileMenuOpen(false)}>Get Started</Link>
-              </Button>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
