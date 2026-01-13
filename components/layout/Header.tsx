@@ -77,11 +77,11 @@ export function Header() {
             onClick={() => setMobileMenuOpen(false)}
           />
           {/* Menu */}
-          <div 
-            className="fixed left-0 right-0 lg:hidden border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/95 z-50 shadow-lg"
+          <div
+            className="fixed left-0 right-0 lg:hidden border-t bg-background z-50 shadow-lg"
             style={{ top: `${headerHeight}px` }}
           >
-            <div className="px-4 py-6 space-y-1">
+            <div className="px-4 py-10 space-y-1">
             {navigation.map((item) => (
               <Link
                 key={item.name}
