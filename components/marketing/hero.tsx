@@ -24,7 +24,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="mx-auto max-w-2xl text-lg font-normal text-muted-foreground sm:text-xl"
         >
-          Reduce administrative workload by 50% and eliminate scheduling errors. An open-source platform that automates elective course selection, giving students a modern portal while freeing staff to focus on student success.
+          ElectivePRO is an open-source platform that automates elective course selection, giving students a modern portal while freeing staff workload by 50% to focus on student success.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
