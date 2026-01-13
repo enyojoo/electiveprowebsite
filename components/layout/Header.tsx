@@ -28,7 +28,7 @@ export function Header() {
   }, [])
 
   return (
-    <header ref={headerRef} className="relative sticky top-0 z-30 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header ref={headerRef} className="relative sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Logo className="h-5 w-auto sm:h-6 md:h-7" />
@@ -72,38 +72,38 @@ export function Header() {
         <>
           {/* Backdrop */}
           <div
-            className="fixed inset-0 bg-black z-40 lg:hidden"
+            className="fixed left-0 right-0 bottom-0 bg-black z-40 lg:hidden"
+            style={{ top: `${headerHeight}px` }}
             onClick={() => setMobileMenuOpen(false)}
           />
           {/* Menu */}
-          <div
-            className="fixed inset-0 lg:hidden bg-background z-50 flex flex-col"
+          <div 
+            className="fixed left-0 right-0 lg:hidden border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/95 z-50 shadow-lg"
+            style={{ top: `${headerHeight}px` }}
           >
-            <div className="flex flex-col justify-center items-center h-full px-6">
-              <div className="w-full max-w-sm space-y-2">
-                {navigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className={cn(
-                        'block rounded-lg px-4 py-3 text-center text-lg font-semibold leading-7 transition-colors',
-                      pathname === item.href
-                        ? 'bg-primary text-primary-foreground'
-                        : 'text-foreground hover:bg-accent hover:text-accent-foreground'
-                    )}
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
-              <div className="mt-8 w-full max-w-sm">
+            <div className="px-4 py-6 space-y-1">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className={cn(
+                    'block rounded-md px-3 py-2.5 text-base font-semibold leading-7 transition-colors',
+                  pathname === item.href
+                    ? 'bg-accent text-accent-foreground'
+                    : 'text-foreground hover:bg-accent hover:text-accent-foreground'
+                )}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {item.name}
+              </Link>
+            ))}
+              <div className="pt-4 mt-4 border-t space-y-3">
                 <Button asChild className="w-full" size="lg">
                   <Link href="/pricing" onClick={() => setMobileMenuOpen(false)}>Get Started</Link>
-                </Button>
-              </div>
+              </Button>
             </div>
           </div>
+        </div>
         </>
       )}
     </header>
