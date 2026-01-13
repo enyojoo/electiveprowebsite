@@ -1,20 +1,15 @@
-'use client'
+import type { Metadata } from 'next'
+import ContactClient from './ContactClient'
+import { BRAND_NAME } from '@/lib/brand-constants'
 
-import { useEffect } from 'react'
-import Cal, { getCalApi } from '@calcom/embed-react'
-import { BRAND_CONTACT_EMAIL, BRAND_PRIMARY_COLOR } from '@/lib/brand-constants'
+export const metadata: Metadata = {
+  title: 'Contact',
+  description: `Get in touch with ${BRAND_NAME}. Schedule a meeting, send us an email, or learn more about our elective course selection platform.`,
+}
 
 export default function ContactPage() {
-  useEffect(() => {
-    (async function () {
-      const cal = await getCalApi({ namespace: '15min' })
-      cal('ui', {
-        hideEventTypeDetails: false,
-        layout: 'month_view',
-        theme: 'light'
-      })
-    })()
-  }, [])
+  return <ContactClient />
+}
 
   return (
     <div className="bg-background pt-12 sm:pt-20 lg:pt-32 pb-12 sm:pb-16 lg:pb-20">
