@@ -1,15 +1,10 @@
-import type { Metadata } from 'next'
-import PricingClient from './PricingClient'
+'use client'
+
+import { useState } from 'react'
+import { PricingCard, PricingTier } from '@/components/marketing/PricingCard'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { BRAND_NAME } from '@/lib/brand-constants'
-
-export const metadata: Metadata = {
-  title: 'Pricing',
-  description: `Choose the right ${BRAND_NAME} plan for your institution. Starter plan for small colleges, Professional for medium universities, and Enterprise for large multi-campus systems.`,
-}
-
-export default function PricingPage() {
-  return <PricingClient />
-}
 
 // Helper function to get price IDs from environment
 const getPriceIds = () => ({
@@ -103,7 +98,7 @@ const pricingTiers: PricingTier[] = [
   },
 ]
 
-export default function PricingPage() {
+export default function PricingClient() {
   const [billingPeriod, setBillingPeriod] = useState<'monthly' | 'yearly'>('monthly')
 
   return (
@@ -135,8 +130,8 @@ export default function PricingPage() {
             >
               Yearly
               <span className={`ml-2 rounded-full px-2 py-0.5 text-xs ${
-                billingPeriod === 'yearly' 
-                  ? 'bg-primary-foreground/20 text-primary-foreground' 
+                billingPeriod === 'yearly'
+                  ? 'bg-primary-foreground/20 text-primary-foreground'
                   : 'bg-primary/20 text-primary'
               }`}>
                 Save 20%
