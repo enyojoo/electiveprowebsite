@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://electivepro.net'
+  const baseUrl = 'https://www.electivepro.net'
 
   // Define all routes with their priorities and change frequencies
   // Note: lastModified removed to prevent dates from showing in search results

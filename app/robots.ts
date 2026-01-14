@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/admin/'],
       },
     ],
-    sitemap: 'https://electivepro.net/sitemap.xml',
+    sitemap: 'https://www.electivepro.net/sitemap.xml',
   }
 }

@@ -10,7 +10,7 @@ const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'ElectivePRO',
-  url: 'https://electivepro.net',
+  url: 'https://www.electivepro.net',
   logo: BRAND_LOGO_URL,
   description: 'Free, modern open-source platform for automating elective course selection. Reduce administrative workload by 50% and eliminate scheduling errors.',
   sameAs: [

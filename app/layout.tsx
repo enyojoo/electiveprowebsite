@@ -14,7 +14,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://electivepro.net'),
+  metadataBase: new URL('https://www.electivepro.net'),
   title: {
     default: 'ElectivePRO - Automate Elective Course Selection',
     template: '%s - ElectivePRO',
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://electivepro.net',
+    canonical: 'https://www.electivepro.net',
   },
   icons: {
     icon: [
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://electivepro.net',
+    url: 'https://www.electivepro.net',
     siteName: 'ElectivePRO',
     title: 'ElectivePRO - Automate Elective Course Selection',
     description: 'Free, modern open-source platform for automating elective course selection. Reduce administrative workload by 50% and eliminate scheduling errors.',
@@ -112,10 +112,10 @@ export default function RootLayout({
               "@type": "WebSite",
               name: BRAND_NAME,
               description: BRAND_DESCRIPTION,
-              url: "https://electivepro.net",
+              url: "https://www.electivepro.net",
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://electivepro.net/search?q={search_term_string}",
+                target: "https://www.electivepro.net/search?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
             }),
@@ -129,7 +129,7 @@ export default function RootLayout({
               "@type": "Organization",
               name: BRAND_NAME,
               description: BRAND_DESCRIPTION,
-              url: "https://electivepro.net",
+              url: "https://www.electivepro.net",
               logo: BRAND_LOGO_URL,
               contactPoint: {
                 "@type": "ContactPoint",
