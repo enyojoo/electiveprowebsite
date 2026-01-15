@@ -54,7 +54,13 @@ export const metadata: Metadata = {
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,
+      'noarchive': true,
+      'nosnippet': false,
     },
+  },
+  other: {
+    'article:author': 'ElectivePRO',
+    'article:publisher': 'ElectivePRO',
   },
   alternates: {
     canonical: 'https://www.electivepro.net',
@@ -104,6 +110,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Prevent dates from appearing in search results */}
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1, noarchive" />
+        <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1, noarchive" />
+        <meta name="article:author" content="ElectivePRO" />
+        <meta name="article:publisher" content="ElectivePRO" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
