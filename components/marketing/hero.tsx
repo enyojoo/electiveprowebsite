@@ -46,6 +46,25 @@ export function Hero() {
           </Button>
         </motion.div>
       </div>
+
+      {/* Product Image */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        className="mx-auto max-w-4xl px-4"
+      >
+        <div className="relative">
+          <div className="absolute inset-0 bg-white/10 rounded-2xl blur-2xl"></div>
+          <div className="relative bg-white/5 backdrop-blur-sm border border-white/20 rounded-2xl p-2 shadow-2xl">
+            <img
+              src="https://cldup.com/063UlUSyY5.png"
+              alt="ElectivePRO Platform Dashboard"
+              className="w-full h-auto rounded-xl shadow-lg"
+            />
+          </div>
+        </div>
+      </motion.div>
     </section>
   )
 }
