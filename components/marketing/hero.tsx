@@ -58,7 +58,7 @@ export function Hero() {
           <div className="absolute inset-0 bg-white/10 rounded-2xl blur-2xl"></div>
           <div className="relative bg-white/5 backdrop-blur-sm border border-white/20 rounded-2xl p-2 shadow-2xl">
             <img
-              src="https://cldup.com/IzGqigfz-C.png"
+              src="https://cldup.com/wYCOQU0RFs.png"
               alt="ElectivePRO Platform Dashboard"
               className="w-full h-auto rounded-xl shadow-lg"
             />
