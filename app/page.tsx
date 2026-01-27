@@ -1,18 +1,32 @@
+import type { Metadata } from "next"
 import { Hero } from "@/components/marketing/hero"
 import { Features } from "@/components/marketing/features"
-import { BRAND_DESCRIPTION, BRAND_LOGO_URL } from "@/lib/brand-constants"
+import { BRAND_DESCRIPTION, BRAND_LOGO_URL, BRAND_NAME } from "@/lib/brand-constants"
 
-export const metadata = {
+export const metadata: Metadata = {
+  title: 'ElectivePRO - Automate Elective Course Selection',
   description: BRAND_DESCRIPTION,
+  openGraph: {
+    title: 'ElectivePRO - Automate Elective Course Selection',
+    description: BRAND_DESCRIPTION,
+    images: [BRAND_LOGO_URL],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'ElectivePRO - Automate Elective Course Selection',
+    description: BRAND_DESCRIPTION,
+    images: [BRAND_LOGO_URL],
+  },
 }
 
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'ElectivePRO',
+  legalName: 'ElectivePRO',
   url: 'https://www.electivepro.net',
   logo: BRAND_LOGO_URL,
-  description: 'Free, modern open-source platform for automating elective course selection. Reduce administrative workload by 50% and eliminate scheduling errors.',
+  description: BRAND_DESCRIPTION,
   sameAs: [
     'https://github.com/enyojoo/electivepronew',
   ],

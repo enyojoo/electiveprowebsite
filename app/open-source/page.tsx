@@ -6,8 +6,17 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { BRAND_NAME } from '@/lib/brand-constants'
 
 export const metadata: Metadata = {
-  title: 'Open Source',
+  title: 'Open Source Elective Course Selection Platform - ElectivePRO',
   description: `${BRAND_NAME} is open-source and free to use. Deploy it yourself, customize it, and contribute back to the community.`,
+  openGraph: {
+    title: 'Open Source Elective Course Selection Platform - ElectivePRO',
+    description: `${BRAND_NAME} is open-source and free to use. Deploy it yourself, customize it, and contribute back to the community.`,
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Open Source Elective Course Selection Platform - ElectivePRO',
+    description: `${BRAND_NAME} is open-source and free to use.`,
+  },
 }
 
 export default function OpenSourcePage() {

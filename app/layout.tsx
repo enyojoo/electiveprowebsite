@@ -109,8 +109,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta name="googlebot" content="noarchive,nosnippet" />
-        <meta name="robots" content="noarchive,nosnippet" />
+        <meta name="googlebot" content="noarchive" />
+        <meta name="robots" content="noarchive" />
         <meta name="referrer" content="no-referrer-when-downgrade" />
         <meta name="format-detection" content="telephone=no" />
         <script
@@ -137,9 +137,13 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: BRAND_NAME,
+              legalName: BRAND_NAME,
               description: BRAND_DESCRIPTION,
               url: "https://www.electivepro.net",
               logo: BRAND_LOGO_URL,
+              sameAs: [
+                "https://github.com/enyojoo/electivepronew",
+              ],
               contactPoint: {
                 "@type": "ContactPoint",
                 email: "support@electivepro.net",

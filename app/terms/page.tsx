@@ -3,8 +3,17 @@ import Link from 'next/link'
 import { BRAND_NAME, BRAND_CONTACT_EMAIL } from '@/lib/brand-constants'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service',
+  title: 'Terms of Service - ElectivePRO',
   description: `Terms of Service for ${BRAND_NAME}. Please read these terms carefully before using our services.`,
+  openGraph: {
+    title: 'Terms of Service - ElectivePRO',
+    description: `Terms of Service for ${BRAND_NAME}. Please read these terms carefully before using our services.`,
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Terms of Service - ElectivePRO',
+    description: `Terms of Service for ${BRAND_NAME}.`,
+  },
 }
 
 export default function TermsPage() {

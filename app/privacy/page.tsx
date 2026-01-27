@@ -3,8 +3,17 @@ import Link from 'next/link'
 import { BRAND_NAME, BRAND_CONTACT_EMAIL } from '@/lib/brand-constants'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy',
+  title: 'Privacy Policy - ElectivePRO',
   description: `Privacy Policy for ${BRAND_NAME}. Learn how we collect, use, and protect your information.`,
+  openGraph: {
+    title: 'Privacy Policy - ElectivePRO',
+    description: `Privacy Policy for ${BRAND_NAME}. Learn how we collect, use, and protect your information.`,
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Privacy Policy - ElectivePRO',
+    description: `Privacy Policy for ${BRAND_NAME}.`,
+  },
 }
 
 export default function PrivacyPage() {
