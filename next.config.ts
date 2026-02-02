@@ -33,9 +33,20 @@ const nextConfig: NextConfig = {
   // Power optimizations
   poweredByHeader: false,
 
-  // Security headers
+  // Security and cache headers
   async headers() {
     return [
+      // Long cache for static assets only (JS, CSS, images)
+      {
+        source: '/_next/static/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      // All other routes (HTML pages): short cache so Google and users get fresh titles/metadata
       {
         source: '/(.*)',
         headers: [
@@ -53,7 +64,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
+            value: 'public, max-age=0, s-maxage=3600, must-revalidate',
           },
           {
             key: 'X-Robots-Tag',
